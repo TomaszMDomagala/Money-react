@@ -1,0 +1,23 @@
+.spending__total {
+    margin: 20px;
+}
+
+.spending__item {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.spending__header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.spending__description {
+    margin-left: 20px;
+    color: #6d6d6d;
+}

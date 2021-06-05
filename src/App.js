@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react'
+import Spendings from './components/spendings/Spendings'
 
 function App() {
+  const [spendings, setSpendings] = useState([])
+
+  useEffect(() => {
+    const getSpendings = async () => {
+      const spendingsFromServer = await fetchSpendings()
+      setSpendings(spendingsFromServer)
+    }
+
+    getSpendings()
+  }, [])
+
+  const fetchSpendings = async () => {
+    const res = await fetch('http://127.0.0.1:8000/spending/api/spendings/')
+    const data = await res.json()
+
+    return data
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Main">
+      <Spendings
+          spendings={spendings}
+      />
     </div>
   );
 }
