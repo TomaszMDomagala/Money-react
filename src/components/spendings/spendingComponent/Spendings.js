@@ -1,4 +1,5 @@
 import Spending from './Spending'
+import '../spendings_style/Spendings.css'
 
 const Spendings = ({ spendings }) => {
 

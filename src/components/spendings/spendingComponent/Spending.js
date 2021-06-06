@@ -1,4 +1,4 @@
-import './spendings_style/Spendings.css'
+import '../spendings_style/Spendings.css'
 
 const Spending = ({ spending }) => {
 

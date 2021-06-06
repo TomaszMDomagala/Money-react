@@ -1,0 +1,66 @@
+.spending__total {
+  margin: 20px;
+}
+
+.spending__item {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.spending__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.spending__description {
+  margin-left: 20px;
+  color: #6d6d6d;
+}
+
+.add__form {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.add__item {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.add__input {
+  font-size: 15px;
+  width: 100%;
+}
+
+.add__title {
+  text-align: center;
+  font-weight: 200;
+}
+
+.btn {
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #88f87d;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  float: right;
+}
+
+.spending__total {
+  font-size: 20px;
+}
+/*# sourceMappingURL=Spendings.css.map */
